@@ -2,30 +2,36 @@ var r = 0;
 var theta = 0;
 var thetaPlus = 10;
 
-function setup() {
-    createCanvas(400,400);
-    background (0);
-
-    let button = createButton("RESET");
-    let button2 = createButton("ADD");
-
-    button.mousePressed(ThetaClear);
-    button2.mousePressed(ThetaADD);
-}
-
 function ThetaClear(){
     background(0);
     thetaPlus = 10;
     r = 0;
-    fill(255);
-    text("Theta Value: " + thetaPlus, 150, 390);
+    fill(255, 255, 255, 75);
+    text("Theta Value: " + thetaPlus, width/2 - 50, height - 10);
+    text("PRESS SPACE TO CLEAR", width/2 - 75, height - 25);
 }
 function ThetaADD(){
     background(0);
-    thetaPlus += 10;
+    thetaPlus += 2.5;
     r = 0;
-    fill(255);
-    text("Theta Value: " + thetaPlus, 150, 390);
+    fill(255, 255, 255, 75);
+    text("Theta Value: " + thetaPlus, width/2 - 50, height - 10);
+    text("PRESS SPACE TO CLEAR", width/2 - 75, height - 25);
+}
+
+function setup() {
+    createCanvas(400,400);
+    background (0);
+    ThetaClear();
+}
+
+function mouseClicked(){
+      ThetaADD();
+}
+function keyPressed(){
+      if (keyCode === 32){
+        ThetaClear();
+      }
 }
 
 function draw() {
