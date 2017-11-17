@@ -12,7 +12,7 @@ function ThetaClear(){
 }
 function ThetaADD(){
     background(0);
-    thetaPlus += 2.5;
+    thetaPlus += 5;
     r = 0;
     fill(255, 255, 255, 75);
     text("Theta Value: " + thetaPlus, width/2 - 50, height - 10);
