@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>GitHub Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.imgur.com/loiECKL.jpg');
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My Programs</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Nikita Yovchev</b></h1>
+    <p>Student Coder.</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <form>
+      <input class="MyButton" type="button" value="View Code" onclick="window.location.href='https://github.com/nikitayvchv'" />
+    </form>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Programs</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://i.imgur.com/XAMDAnZ.gif" style="width:100%" title="10-Print Challenge">
+        <img src="https://i.imgur.com/ksdOXnb.gif" style="width:100%" title="Galaxy Creator">
+        <img src="https://i.imgur.com/yMCqh4d.png" style="width:100%" title="Space Ship">
+        <img src="https://i.imgur.com/TN8DL2m.gif" style="width:200%" title="Shared Canvas on Local Server">
+
+      </div>
+
+      <div class="w3-half">
+        <img src="https://i.imgur.com/ovOgQTU.gif" style="width:100%" title="Paint Splatter">
+        <img src="https://i.imgur.com/rCD3P5p.png" style="width:80%"  title="Art with Recursive Code">
+        <img src="https://i.imgur.com/F2vMyuj.gif" style="width:100%" title="Frog and Fly">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+    <p>My name is Nikita Yovchev. I am a grade 11 student at A. Y. Jackson Secondary School. I am currently taking ICS4U (grade 12 computer science). I have worked with many different coding languages over the past 3 years, such as JavaScript, C++, HTML/CSS, Python, and more.
+
+    </p>
+    <h3 class="w3-padding-16">Proficient Languages</h3>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">85%</div>
+    </div>
+    <p class="w3-wide">C++</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide">Other Languages</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Javascript</span><br>
+        ActionScript
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">HTML</span><br>
+        CSS
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">C++</span><br>
+        Arduino
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Python</span><br>
+        RUBY
+      </div>
+    </div>
+
+    <form>
+      <input class="MyButton" type="button" value="My Github" onclick="window.location.href='https://github.com/nikitayvchv'" />
+    </form>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">A Word from my Teachers</h3>
+    <p><span class="w3-large w3-text-black w3-margin-right">P. Osudar</span> Computer Science Teacher</p>
+    <p>--------------------</p><br>
+
+    <p><span class="w3-large w3-text-black w3-margin-right">C. Kirby</span> Computer Science Teacher</p>
+    <p>--------------------</p><br>
+
+    <p><span class="w3-large w3-text-black w3-margin-right">D. Thickett</span> Head of Math Department</p>
+    <p>--------------------</p><br>
+
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Kanata, Ontario</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: yovchevnikita@gmail.com</p>
+    </div>
+    </div>
+
+  <!-- Footer -->
+
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">CLICK BELOW FOR MORE CONTACT METHODS</p>
+    <i class="fa fa-instagram w3-hover-opacity" onclick="window.location.href='https://www.instagram.com/nikitayvchv/?hl=en'"></i>
+    <i class="fa fa-twitter w3-hover-opacity" onclick="window.location.href='https://twitter.com/nikitayovchev?lang=en'"></i>
+    <p class="w3-medium">Made with help from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
